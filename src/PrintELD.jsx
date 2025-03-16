@@ -32,10 +32,9 @@ const PrintELD = () => {
         <div className="flex items-center justify-center gap-5">
           {imagePaths.map((path, index) => (
             <img
-              key={index}
-              src={"https://web-production-59cbe.up.railway.app" + path}
-              alt={`ELD-${index + 1}`}
-              className="w-1/3"
+              src={`data:image/png;base64,${path}`}
+              alt="Base64 Image"
+              style={{ width: "300px", height: "auto" }}
             />
           ))}
         </div>
