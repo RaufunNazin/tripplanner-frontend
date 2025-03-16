@@ -33,7 +33,7 @@ const PrintELD = () => {
           {imagePaths.map((path, index) => (
             <img
               key={index}
-              src={"http://localhost:8000" + path}
+              src={"https://web-production-59cbe.up.railway.app" + path}
               alt={`ELD-${index + 1}`}
               className="w-1/3"
             />
